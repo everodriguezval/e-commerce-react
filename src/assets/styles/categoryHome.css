@@ -5,6 +5,7 @@
 
 
 .home-products-container h2 {
+
     margin: 1rem 0;
     font-family: var(--main-headers);
     text-align: center;
@@ -17,12 +18,14 @@
     width: 250px;
 }
 
+
 .products-card-home img {
     height: 250px;
     width: 250px;
     border-radius: 15px;
     object-fit: cover;
 }
+
 
 .card-text-home {
     position: absolute;
@@ -32,6 +35,7 @@
 
 @media screen and (min-width: 750px) {
     .products-card-home-grid-lg {
+
         
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -42,5 +46,6 @@
     .categoryHome-1 {
         grid-column: 1 / 2;
         grid-row: 1 / 3;
+
     }
 }

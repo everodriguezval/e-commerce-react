@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link, Navigate } from "react-router-dom";
 import axios from "axios";
 
+
 const RegisterPage = () => {
   const [email, setEmail] = useState("");
   const [firstName, setFirstName] = useState("");

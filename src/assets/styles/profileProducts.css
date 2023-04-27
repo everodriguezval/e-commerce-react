@@ -28,6 +28,7 @@
     border-radius: 50%;
 }
 
+
 .profile form, .product-form, .login-form, .contact-page-container form {
     background-color: #F5F5F5;
     margin-top: 1rem;
@@ -40,9 +41,11 @@
     margin-top: 7rem;
 }
 
+
 .contact-page-container form {
     margin-top: 4rem;
 }
+
 /* .products-img img {
     height: 130px;
     width: 200px;
@@ -62,6 +65,7 @@
 .product-container{
     margin: 2rem 0;
 }
+
 
 
 .product-display {
@@ -99,6 +103,7 @@
     right: 10px;
 }
 
+
 .profile input, .login-form input, .contact-page-container input {
     width: 100%;
     padding: 8px 10px;
@@ -120,6 +125,7 @@
     border-radius: 4px;
     cursor: pointer;
   }
+
 
 .error-home-btn {
     width: 10rem;

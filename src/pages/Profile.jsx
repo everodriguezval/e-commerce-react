@@ -4,6 +4,7 @@ import { useState } from "react";
 
 const Profile = () => {
     
+
   const [inputStatusDisabled, setinputStatusDisabled] = useState(true);
 
   const [formData, setFormData] = useState({
@@ -32,15 +33,17 @@ const Profile = () => {
     });
   };
 
+
   const handleClick = () => {
     setinputStatusDisabled(false);
   }
-
     return (
       <div className="profile-page">
         <article className="profile">            
             <img src="https://placehold.co/130x130"></img>
             <form onSubmit={handleSubmit}>
+
+    
                 <FaPen className="profile__icon" onClick={handleClick}/>
                 <label htmlFor="fname">First Name</label>
                 <input type="text" id="fname" name="fname" onChange={handleChange} value={formData.fname} disabled={inputStatusDisabled}/>

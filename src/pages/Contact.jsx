@@ -23,8 +23,6 @@ function ContactPage() {
           Thanks for contacting us - we'll get back to you as soon as we can.
         </p>
       ) : (
-        <>  
-        <h2>Contact Us</h2>      
         <form onSubmit={handleSubmit}>
           <label>
             Name:
@@ -42,6 +40,7 @@ function ContactPage() {
               onChange={(event) => setEmail(event.target.value)}
             />
           </label>
+
           <label>
             Message:
             <textarea
@@ -49,10 +48,10 @@ function ContactPage() {
               onChange={(event) => setMessage(event.target.value)}
             />
           </label>
+
           <button type="submit">Submit</button>
         </form>
         </>
-
       )}
     </article>
   );
