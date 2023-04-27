@@ -1,5 +1,6 @@
-import "../assets/styles/homePage.css"
 
+
+import "../assets/styles/homePage.css"
 
 import CardCarousel from '../components/Carousel'
 import CategoryHome from "../components/CategoryHome"
@@ -28,6 +29,7 @@ const Home = () => {
     slidesToSlide: 1 // optional, default to 1.
   }
 };
+
     return (
         <article className='homepage-container'>
             <img className="hero-image-background" src="src/assets/images/hero-bg.png" alt="Hero gradient background"></img>

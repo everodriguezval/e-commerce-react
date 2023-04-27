@@ -32,7 +32,6 @@ function ContactPage() {
               onChange={(event) => setName(event.target.value)}
             />
           </label>
-          <br />
           <label>
             Email:
             <input
@@ -41,18 +40,18 @@ function ContactPage() {
               onChange={(event) => setEmail(event.target.value)}
             />
           </label>
-          <br />
+
           <label>
             Message:
             <textarea
-              style={{ width: "403px", height: "411px" }}
               value={message}
               onChange={(event) => setMessage(event.target.value)}
             />
           </label>
-          <br />
+
           <button type="submit">Submit</button>
         </form>
+        </>
       )}
     </article>
   );
