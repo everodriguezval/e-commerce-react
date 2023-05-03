@@ -22,15 +22,12 @@ body {
 
 .main-container-pages {
     position: relative;
-    min-height: 100vh;
+    min-height: 60vh;
 }
 
-/* #content-page-wrap {
-    padding-bottom: 13rem;
-} */
 
 .hero-image-background {
-    height: 90vh;
+    height: 95vh;
     width: 100vw;
     /* transform: translateX(-40px); */
     object-fit: cover;
@@ -66,11 +63,11 @@ body {
     background: none;
     border: 1px solid white;
     border-radius: 5px;
-    padding: 10px 50px;
+    padding: 10px 30px;
     color:white;
     font-family: var(--heading-font);
     font-size: 20px;
-    margin: 20px 0;
+    margin: 2rem 0;
 }
 
 .carousel-paragraph p {
@@ -88,7 +85,7 @@ body {
     padding: 1rem
 }
 
-.card-collection {
+.card-collection, .section-product {
     margin: 1rem;
     padding: 1.5rem 1rem;
     text-align: center;
@@ -96,12 +93,17 @@ body {
     background-color: #E3E3E3;
 }
 
+.section-product {
+    text-align: left;
+}
+
 .collection h2 {
     font-family: var(--main-headers);
     letter-spacing: 2px;
+    margin-bottom: 1rem;
 }
 
-.product-card img {
+.product-card img, .section-product img {
     height: 60%;
     width: 60%;
     display: block;
@@ -110,7 +112,7 @@ body {
 
 .btn-view-item {
     padding: 0.5rem 1.5rem;
-    margin-top: 2rem;
+    margin-top: 1rem;
     border: 2px solid black;
     border-radius: 8px;
 }
@@ -155,6 +157,12 @@ body {
     background-color: #2D2C2C;
 }
 
+@media screen and (min-width: 500px) {
+    .hero-img img {
+        height: 30%;
+        width: 30%;
+    }
+}
 
 @media screen and (min-width: 750px) {
 
@@ -189,10 +197,6 @@ body {
     .card-collection {
         margin-top: 3rem;
         height: 45vh;
-    }
-    .product-card img {
-        height: 60%;
-        width: 60%;
     }
 
     .product-card h3 {

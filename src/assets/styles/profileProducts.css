@@ -12,7 +12,6 @@
     font-family: var(--text);   
 }
 
-
 .profile {
     font-size: 0.8rem;
     margin: 5rem 0 2rem 0;
@@ -28,7 +27,6 @@
     border-radius: 50%;
 }
 
-
 .profile form, .product-form, .login-form, .contact-page-container form {
     background-color: #F5F5F5;
     margin-top: 1rem;
@@ -41,32 +39,9 @@
     margin-top: 7rem;
 }
 
-
-.contact-page-container form {
-    margin-top: 4rem;
-}
-
-/* .products-img img {
-    height: 130px;
-    width: 200px;
-    object-fit: cover;
-    border-radius: 50%;
-    box-shadow: 10px 10px 10px #b0aeae;
-    
-} */
-.products-img {
-    margin-top: 2rem;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 2rem;
-}
-
 .product-container{
     margin: 2rem 0;
 }
-
-
 
 .product-display {
     background-color: rgb(241, 232, 232);
@@ -76,8 +51,7 @@
     margin-top:2rem;
     word-wrap: break-word;
     height: fit-content;
-    height: 60vh;
-    
+    /* height: 50vh;    */
 }
 
 .product-display img {
@@ -86,11 +60,13 @@
     object-fit: cover;
 }
 
-.view-details{
+.view-details, .add-cart-btn {
     background: none;
-    margin-top:0.8rem;
+    border: 2px solid rgb(167, 166, 166);
     border-radius: 5px;
     padding:5px;
+    display: block;
+    margin: 1rem auto 0 auto;
 }
 
 .product-card img{
@@ -102,7 +78,6 @@
     top: 10px;
     right: 10px;
 }
-
 
 .profile input, .login-form input, .contact-page-container input {
     width: 100%;
@@ -125,7 +100,6 @@
     border-radius: 4px;
     cursor: pointer;
   }
-
 
 .error-home-btn {
     width: 10rem;
@@ -180,35 +154,13 @@
         margin: 4rem auto 0 auto;
     }
 
-    .product-container{
-        display:grid;
+    .product-container {
+        display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 1rem;
     }
-    
-    .product-display{
-        background-color: rgb(241, 232, 232);
-        text-align: center;
-        border-radius: 5px;
-        word-wrap: break-word;
-        height: fit-content;
-        margin-top:3rem;
-    }
-
-    .view-details{
-        background: none;
-        margin-top:0.8rem;
-        border-radius: 5px;
-        padding:5px;
-    }
 
     .product-display img {
-        height: 60%;
-        width: 60%;
-        display: block;
         margin: 1rem auto 2rem auto;
-        object-fit: cover;
     }
-
-
 }

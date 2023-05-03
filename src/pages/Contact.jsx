@@ -23,35 +23,37 @@ function ContactPage() {
           Thanks for contacting us - we'll get back to you as soon as we can.
         </p>
       ) : (
-        <form onSubmit={handleSubmit}>
-          <label>
-            Name:
-            <input
-              type="text"
-              value={name}
-              onChange={(event) => setName(event.target.value)}
-            />
-          </label>
-          <label>
-            Email:
-            <input
-              type="email"
-              value={email}
-              onChange={(event) => setEmail(event.target.value)}
-            />
-          </label>
+        <>
+          <h2>Contact Us!</h2>
+          <form onSubmit={handleSubmit}>
+            <label>
+              Name:
+              <input
+                type="text"
+                value={name}
+                onChange={(event) => setName(event.target.value)}
+              />
+            </label>
+            <label>
+              Email:
+              <input
+                type="email"
+                value={email}
+                onChange={(event) => setEmail(event.target.value)}
+              />
+            </label>
 
-          <label>
-            Message:
-            <textarea
-              value={message}
-              onChange={(event) => setMessage(event.target.value)}
-            />
-          </label>
+            <label>
+              Message:
+              <textarea
+                value={message}
+                onChange={(event) => setMessage(event.target.value)}
+              />
+            </label>
 
-          <button type="submit">Submit</button>
-        </form>
-        </>
+            <button type="submit">Submit</button>
+          </form>
+        </> 
       )}
     </article>
   );
